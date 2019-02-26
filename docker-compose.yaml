@@ -1,0 +1,14 @@
+version: '2.2'
+services:
+  simple-app-1:
+    image: prometheus-grafana:0.1
+    ports:
+      - "9000"
+  simple-app-2:
+    image: prometheus-grafana:0.1
+    ports:
+      - "9000"
+  prometheus:
+    image: prom/prometheus:v2.7.1
+  grafana:
+    image: grafana/grafana:5.4.3
