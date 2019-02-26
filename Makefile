@@ -13,3 +13,6 @@ clean:
 
 build:
 	sbt clean docker:publishLocal
+
+run:
+	docker-compose rm -f; docker-compose up

@@ -1,0 +1,11 @@
+global:
+  scrape_interval:     15s
+  evaluation_interval: 30s
+
+scrape_configs:
+  - job_name: simple-app
+    static_configs:
+      - targets: ['simple-app-1:9000', 'simple-app-2:9000']
+        labels:
+          app: simple-app
+          env: prod
