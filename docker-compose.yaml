@@ -4,10 +4,12 @@ services:
     image: prometheus-grafana:0.1
     ports:
       - "9000"
+      - "9001:9000"
   simple-app-2:
     image: prometheus-grafana:0.1
     ports:
       - "9000"
+      - "9002:9000"
   prometheus:
     image: prom/prometheus:v2.7.1
     command: [
