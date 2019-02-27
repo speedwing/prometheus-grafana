@@ -1,12 +1,12 @@
 version: '2.2'
 services:
   simple-app-1:
-    image: prometheus-grafana:0.1
+    image: speedwing/prometheus-grafana:0.1
     ports:
       - "9000"
       - "9001:9000"
   simple-app-2:
-    image: prometheus-grafana:0.1
+    image: speedwing/prometheus-grafana:0.1
     ports:
       - "9000"
       - "9002:9000"
